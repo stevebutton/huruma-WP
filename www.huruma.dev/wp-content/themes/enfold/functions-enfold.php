@@ -974,7 +974,7 @@ if(!function_exists('avia_theme_featured_image_meta'))
 		    $value = esc_attr( get_post_meta( $post->ID, $id, true ) );
 		    $selected = !empty($value) ? "checked='checked'" : "";
 		    
-		    $label = '<label for="' . $id . '" class="selectit"><input '.$selected.' name="' . $id . '" type="checkbox" id="' . $id . '" value="1" > ' . $text .'</label>';
+		    $label = '<label for="' . $id . '" class="selectit"><input '.$selected.' name="' . $id . '" type="checkbox" id="' . $id . '" value="0" > ' . $text .'</label>';
 		    return $content .= $label;
 		}
 		
